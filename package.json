@@ -1,0 +1,48 @@
+{
+  "name": "pess",
+  "version": "1.0.0",
+  "description": "Parametric Emotion StyleSheets: react alternative to traditional css based on the NON-direct manipulation of the emotion css prop, instead providing an interface to it through the creation of a pess object for each component to be styled, and passing it via the pess prop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build:tsc": "tsc",
+    "build:babel": "babel src --out-dir dist --extensions \".ts,.tsx,.js,.jsx\"",
+    "build": "npm run clean && npm run build:tsc && npm run build:babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aledima00/pess.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "emotion",
+    "css"
+  ],
+  "author": "Alessandro Di Matteo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aledima00/pess/issues"
+  },
+  "homepage": "https://github.com/aledima00/pess#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.24.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-optional-chaining": "^7.24.8",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.3"
+  }
+}

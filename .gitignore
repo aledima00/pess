@@ -1,0 +1,18 @@
+# node modules
+/node_modules
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+
+# Build files
+/dist
+
+# env variables
+.env
+
+# for macOS
+.DS_Store
+
+# log files
+*.log
